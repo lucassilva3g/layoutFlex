@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,8 +7,12 @@
 .container {
   background-color: darkgrey;
   min-height: 100vh;
+  display: flex;
+  column-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* serve para quebrar a linha */
 }
-
 
 .item {
   width: 200px;
@@ -16,4 +20,9 @@
   border: 2px solid #000;
   background-color: white;
   font-size: 20px;
+align-items: center;
+display: flex;
+justify-content: center;
 }
+
+
