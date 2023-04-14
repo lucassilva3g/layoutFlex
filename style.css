@@ -7,49 +7,15 @@
 .container {
   min-height: 100vh;
   background-color: darkgrey;
-  display: flex;
-  flex-direction: column;
-}
-
-p {
-  font-size: 30px;
-}
-
-.header {
-  flex-basis: 100%;
-  padding: 10px;
-  background-color: white;
-  border: 2px solid black;
-  display: flex;
-  justify-content: center;
-}
-
-.main-content {
-  flex: 1 0 400px;
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  /* align-items: center; */
-  justify-content: center;
-  align-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px 15px;
+grid-auto-rows: minmax(210px, 100%);
 }
 
 .item {
-  width: 400px;
-  height: 300px;
-  background-color: white;
-  border: 1px solid black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer {
-  flex-basis: 100%;
-  padding: 10px;
-  background-color: white;
   border: 2px solid black;
-  display: flex;
-  justify-content: center;
+  background-color: white;
+  font-size: 30px;
+  padding: 10px;
 }
